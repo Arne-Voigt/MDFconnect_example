@@ -1,2 +1,2 @@
-# MDFconnexion_example
+# MDFconnect_example
 example for the usage of the MDFconnexion repo 
