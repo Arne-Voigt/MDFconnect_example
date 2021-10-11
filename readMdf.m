@@ -9,7 +9,7 @@ toc
 % dataBucket.extractAll();  % extract all into the workspace
 % toc
 
-%% 2nd version: extract data via conatainer  
+%% 2nd version: extract data via container  
 tic
 cntnr = MdfObjRead.hHD.getContainerOfAllCNsRegEx('.*'); % use regex to filter for desired channels
 for key = cntnr.keys() % step through all channles
