@@ -1,0 +1,3 @@
+[submodule "MDFconnect"]
+	path = MDFconnect
+	url = https://github.com/Arne-Voigt/MDFconnect.git
