@@ -1,5 +1,6 @@
 # MDFconnect_example
-The repo allows the usage of mdf file in matlab.
+The repo shows implemetation examples for [MDFconnect](MDFconnect/README.md) project.
+the the allows the usage of mdf file in matlab.
 Signals from a mdf file can be imported into the matlab workspace, 
 Likewise signals exported from the workspace into a mdf file.
 
