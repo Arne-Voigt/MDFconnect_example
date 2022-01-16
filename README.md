@@ -22,10 +22,10 @@ readMdf()
 
 ## read mdf file with signal parser
 
-imports data from testWrite.mdf file into the matlab workspace, while renaming the signals through a dedicated function, run:
+imports data from testWrite.mdf file into the matlab workspace, while renaming the signals through a dedicated function handle, run:
 ```
 readMdf_withNameParser()
 ```
 this will:
-* the change the imported signals, as defined in the signalNameParser() function, idea for this is to have a 
-custom way from tweaking the signal name (e.g. for removing the "/ETK" substring )
+* the imported signals will be renamed, as defined in the signalNameParser() function. 
+* idea for this is to have a custom way from tweaking the signal name (e.g. for removing the "/ETK" substring )
