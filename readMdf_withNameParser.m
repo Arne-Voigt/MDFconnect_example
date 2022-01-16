@@ -9,17 +9,11 @@ end
 
 %% read in file structure
 tic
-MdfObjRead = MDF_OBJECT();
+MdfObjRead = MDF_OBJECT(@signalNameParser);  
 MdfObjRead.read('testWrite.mdf');
 fprintf('time to read file:  %.2fsec\n',toc);
 
-%% 1st version: extract data via dataBucket-object
-% tic 
-% dataBucket = MdfObjRead.hHD.getDataAsTsBucket();
-% dataBucket.extractAll();  % extract all into the workspace
-% toc
-
-%% 2nd version: extract data via container  
+%% extract data via container  
 tic
 cntnr = MdfObjRead.hHD.getContainerOfAllCNsRegEx('.*'); % use regex to filter for desired channels
 for key = cntnr.keys() % step through all channles

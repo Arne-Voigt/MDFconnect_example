@@ -1,3 +1,7 @@
+%% add MDFconnect folder to the matlab path 
+[thisPath,~] = fileparts(mfilename('fullpath'));
+addpath(fullfile(thisPath, 'MDFconnect'));
+
 %% run simultion
 open('generate_timeseries.slx');
 sim('generate_timeseries.slx');
@@ -25,5 +29,4 @@ MdfObjWrite = MDF_OBJECT();
 MdfObjWrite.importTsBucket(simDataBucket); 
 MdfObjWrite.print('testWrite.mdf');
 
-toc
-
+fprintf('time to write file: %.2fsec\n',toc);
