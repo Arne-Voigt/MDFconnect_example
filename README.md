@@ -22,7 +22,7 @@ readMdf()
 
 ## read mdf file with signal parser
 
-imports data from testWrite.mdf file into the matlab workspace, run:
+imports data from testWrite.mdf file into the matlab workspace, while renaming the signals through a dedicated function, run:
 ```
 readMdf_withNameParser()
 ```
