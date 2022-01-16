@@ -1,7 +1,31 @@
 # MDFconnect_example
-The repo shows implemetation examples for [MDFconnect](MDFconnect/README.md) project.
-the the allows the usage of mdf file in matlab.
-Signals from a mdf file can be imported into the matlab workspace, 
-Likewise signals exported from the workspace into a mdf file.
 
-The used mdf version is 3.3, files of version 4.x (m4f) can#t be used. 
+The repo shows implemetation examples for [MDFconnect](https://github.com/Arne-Voigt/MDFconnect_example) repo.
+
+## write mdf file
+
+exports simulation data into the testWrite.mdf file, run: 
+```
+writeMdf()
+```
+this will: 
+* run the simulink model generate_timeseries.slx
+* gather the data from the logged, streamed and data store signals
+* export the signals into the testWrite.mdf file
+
+## read mdf file 
+
+imports data from testWrite.mdf file into the matlab workspace, run:
+```
+readMdf()
+```
+
+## read mdf file with signal parser
+
+imports data from testWrite.mdf file into the matlab workspace, run:
+```
+readMdf_withNameParser()
+```
+this will:
+* the change the imported signals, as defined in the signalNameParser() function, idea for this is to have a 
+custom way from tweaking the signal name (e.g. for removing the "/ETK" substring )
