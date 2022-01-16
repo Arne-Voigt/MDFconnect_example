@@ -1,3 +1,6 @@
+% runs the simulink model "generate_timeseries.slx" to generate data,
+% exports that data into the file "testWrite.mdf" 
+
 %% add MDFconnect folder to the matlab path 
 [thisPath,~] = fileparts(mfilename('fullpath'));
 addpath(fullfile(thisPath, 'MDFconnect'));
