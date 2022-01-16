@@ -1,6 +1,6 @@
 # MDFconnect_example
 
-The repo shows implemetation examples for [MDFconnect](https://github.com/Arne-Voigt/MDFconnect_example) repo.
+The repo shows implemetation examples for [MDFconnect](https://github.com/Arne-Voigt/MDFconnect) repo.
 
 ## write mdf file
 
